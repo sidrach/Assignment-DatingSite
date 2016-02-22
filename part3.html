@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<title>Dating Site</title>
+
+
+<style>
+
+fieldset {
+	background:lightyellow;
+	border: 10px solid yellow;
+	margin-bottom: 10px;
+	width: 720px;
+	}
+	
+label {
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	}
+	
+.labS {
+	width:auto;
+	}
+	
+.textA {
+	width: 360px;
+	height: 50px;
+}
+
+.contain {
+	text-align:auto;
+	}
+
+.left {
+	background-color: maroon;
+	padding: 5px;
+	display:inline;
+	}
+
+.right {
+	background-color: purple;
+	padding: 5px;
+	display:inline;
+	}
+
+#address {
+	width:360px;
+	height:50px;
+}
+
+label:hover, input:hover {
+	font-size:20px;
+	}
+	
+
+
+</style>
+
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+</head>
+
+<body>
+
+<h1> Please Enter Your Details For Our Dating Website! </h1>
+<p> Sidra Chaudhry's part3.html Assignment 1
+
+	<form action="destination" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Your Face</legend>
+			<label for="face">Your image:</label>
+			<input type="file" name="face" required>
+			<br>
+			<label for="image">Image preview:</label>
+			<img id="preview">
+		
+		</fieldset>
+	
+		
+		<fieldset>
+			<legend>Your General Details</legend>
+			
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<br>
+			<div class="labS">
+				<label for="gender">Gender:</label>
+				<input type="radio" name="gender" value="male" required>Male
+				<input type="radio" name="gender" value="female" required>Female
+			</div>
+			<br>
+			<label for="age">Age:</label>
+			<input type="text" id="age" name="age" required>
+			<br>
+			<label for="birth">Date of birth:</label>
+			<input type="date" name="birth" id="birth">
+			<br>
+			<label for="favColor">Favorite color:</label>
+			<input type="color" name="favColor" id="favColor">
+			<br>
+			<label for="country">Which country:</label>
+			<select name="country" id="country">
+				<option value="us">United States</option>
+				<option value="mex">Mexico</option>
+				<option value="china">China</option>
+				<option value="france">France</option>
+				<option value="aus">Australia</option>
+				<option value="no">No selection</option>
+			</select>
+			
+		</fieldset>
+		
+		<fieldset>
+			<legend>Your Indicators</legend>
+			<div class="contain">
+			<label for="height">Height:</label>
+			<div class="left">Short</div>
+			<input type="range" name="height" id ="height" min="0" max="100">
+			<div class="right">Tall</div>
+			</div>
+			<br>
+			<div class= "contain">
+			<label for="salary">Salary:</label>
+			<div class="left">Poor</div>
+			<input type="range" name="salary" height="salary" min="0" max="100">
+			<div class="right">Rich</div>
+			</div>
+		
+		</fieldset>
+		
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+			<br>
+			<label for="mobile">Mobile:</label>
+			<input type="tel" name="mobile" id="mobile">
+			<br>
+			
+			<label for="address">Address:</label>
+			<textarea name="address" id="address" rows="5" cols="30">
+			</textarea>
+			
+			<br>
+			<div class="labS">
+				<label for="contact">Method to contact you:</label>
+				<input type="checkbox" name="contact" value="email" id="contact">Email
+				<input type="checkbox" name="contact" value="whatsapp" id="contact">Whatsapp
+				<input type="checkbox" name="contact" value="inapp" id="contact">In-app chat
+			</div>
+			
+		</fieldset>
+		
+		<input type="submit" value="Submit!">
+		
+	</form>
+
+
+</body>
+</html>
